@@ -1,0 +1,271 @@
+/* VARIABLES */
+
+:root {
+    --main-title-size: 5rem;
+    --sub-title-size: 3.5rem;
+    --section-title-size: 3rem;
+    --nav-link-size: 2rem;
+    --section-price-size: 1.8rem;
+    --paragraph-text-size: 1.5rem;
+    --heading-font: 'Roboto', sans-serif;
+    --paragraph-font: 'PT Serif', serif;
+}
+
+
+/* RESET */
+*, ::before, ::after {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 10px;
+    box-sizing: border-box;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+::placeholder, input  {
+    font-size: 10px;
+}
+
+/* PAGE STYLES */
+
+h1, h2, h3, li {
+    font-family: var(--heading-font);
+}
+
+p {
+    font-family: var(--paragraph-font);
+}
+
+
+
+/* HEADER */
+
+#header {
+    width: 100%;
+    position: sticky;
+    top: -200px;
+    background-color: darkcyan;
+    border-bottom: 2px solid black;
+    padding: 2rem 0;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+}
+
+h1 {
+    font-size: var(--main-title-size);
+    text-transform: uppercase;
+    padding: 2rem 0;
+    margin: 0 auto;
+    letter-spacing: 8px;
+}
+
+ul {
+    display: flex;
+    gap: 1.5rem;
+    font-size: var(--nav-link-size);
+    text-transform: uppercase;
+    justify-content: center;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#header-img {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+}
+
+
+/* MAIN */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 70%;
+    margin: 50px auto;
+}
+
+h2 {
+    font-size: var(--sub-title-size);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+h3 {
+    font-size: var(--section-title-size);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+p, a {
+    font-size: var(--paragraph-text-size);
+}
+
+#intro p, #demo p {
+    width: 50%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+#demo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#services {
+    display: flex;
+    gap: 40px;
+}
+
+#services p {
+    text-align: justify;
+}
+
+.price {
+    text-align: center !important;
+    text-transform: uppercase;
+    padding-top: 20px;
+    font-size: var(--section-price-size);
+}
+
+.services-image {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    width: 100px;
+    height: auto;
+}
+
+section {
+    margin-top: 100px;
+}
+
+#video {
+    margin: 50px 0;
+}
+
+#contact {
+    width: 60%;
+}
+
+#form {
+    width: 100%;
+    padding: 20px;
+    font-size: var(--paragraph-text-size);
+    font-family: var(--paragraph-font);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#form input {
+    margin-bottom: 20px;
+    padding: 10px 5px;
+}
+
+#submit {
+    width: 30%;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+footer {
+    width: 100%;
+    background-color: darkcyan;
+    border-top: 2px solid black;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 1300px) {
+    h1 {
+        text-align: center;
+    }
+
+    #services {
+        display: flex;
+        flex-direction: column;
+        max-width: 50%;
+        gap: 80px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    :root {
+        --main-title-size: 4rem;
+        --sub-title-size: 2.5rem;
+        --section-title-size: 2rem;
+        --nav-link-size: 1.8rem;
+        --section-price-size: 1.5rem;
+        --paragraph-text-size: 1.3rem;
+        --heading-font: 'Roboto', sans-serif;
+        --paragraph-font: 'PT Serif', serif;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+    
+    h3 {
+        margin-bottom: 20px;
+    }
+
+    #services {
+        display: flex;
+        flex-direction: column;
+        max-width: 50%;
+        gap: 80px;
+    }
+
+    #video {
+        width: 350px;
+        aspect-ratio: auto;
+    }
+
+    #form {
+        width: 100%;
+        padding: 10px;
+        font-size: var(--paragraph-text-size);
+        font-family: var(--paragraph-font);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #submit {
+        width: fit-content;
+    }
+}
+
+
