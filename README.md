@@ -1,4 +1,4 @@
-# monster-problems
+# Monster Problems - A Product Landing Page for Geralt the Witcher
 A FreeCodeCamp Product Landing Page
 
 ## The Following Tasks Must Be Completed
